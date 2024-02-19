@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaInicial">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clique em um dos botões."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <Button
+        android:id="@+id/primogenito"
+        android:layout_width="223dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="156dp"
+        android:text="O PRIMOGÊNITO"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="258dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/germinare"
+                android:layout_width="200dp"
+                android:layout_height="57dp"
+                android:onClick="exGerminare"
+                android:text="Germinare..!!" />
+
+            <Button
+                android:id="@+id/android"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:onClick="olaAndroid"
+                android:text="Olá Android" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ex_dolar"
+                android:layout_width="200dp"
+                android:layout_height="57dp"
+                android:onClick="conversaoDolar"
+                android:text="Conversão de Dólar" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:onClick="linearLayout"
+                android:text="LinearLayout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/netflix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="netflix"
+                android:text="Netflix" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
