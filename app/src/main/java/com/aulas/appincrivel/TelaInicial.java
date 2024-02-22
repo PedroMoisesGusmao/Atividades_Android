@@ -45,4 +45,9 @@ public class TelaInicial extends AppCompatActivity {
         Intent netflix = new Intent(this, Netflix.class);
         startActivity(netflix);
     }
+
+    public void gasolina(View view) {
+        Intent gasolina = new Intent(this, Gasolina.class);
+        startActivity(gasolina);
+    }
 }

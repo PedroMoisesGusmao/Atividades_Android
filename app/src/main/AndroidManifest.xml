@@ -13,6 +13,11 @@
         android:theme="@style/Theme.AppIncrivel"
         tools:targetApi="31" >
         <activity
+            android:name=".Gasolina"
+            android:exported="false"
+            android:label="@string/title_activity_gasolina"
+            android:theme="@style/Theme.AppIncrivel" />
+        <activity
             android:name=".Netflix"
             android:exported="false" />
         <activity
